@@ -12,12 +12,12 @@
 </h:head>
 
 <h:body>
-    <form action="/j_spring_security_check" method="post">
+    <form action="/login" method="post">
         <h:panelGroup layout="block">
             <h:outputText value="#{userBean.pringMessage}"/>
             <h:panelGrid columns="1" style="text-align: center">
-                <h:inputText a:placeholder="Username" id="j_username" required="true"/>
-                <h:inputSecret a:placeholder="Password" id="j_password" required="true"/>
+                <h:inputText a:placeholder="Username" id="username" required="true"/>
+                <h:inputSecret a:placeholder="Password" id="password" required="true"/>
             </h:panelGrid>
                 <input type="submit" value="Login"/>
 

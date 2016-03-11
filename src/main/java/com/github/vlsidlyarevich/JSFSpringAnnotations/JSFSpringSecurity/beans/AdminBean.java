@@ -15,7 +15,7 @@ public class AdminBean {
     @Autowired
     private AdminMessage message;
 
-    public String pringMessage(){
+    public String printMessage(){
         return  message.getMessage();
     }
 
