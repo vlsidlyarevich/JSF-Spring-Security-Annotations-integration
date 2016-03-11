@@ -17,7 +17,7 @@ public class AppConfiguration {
     public ViewResolver viewResolver() {
         UrlBasedViewResolver viewResolver = new UrlBasedViewResolver();
         viewResolver.setViewClass(JsfView.class);
-        viewResolver.setPrefix("/WEB-INF/pages/");
+        viewResolver.setPrefix("/pages/");
         viewResolver.setSuffix(".xhtml");
 
         return viewResolver;

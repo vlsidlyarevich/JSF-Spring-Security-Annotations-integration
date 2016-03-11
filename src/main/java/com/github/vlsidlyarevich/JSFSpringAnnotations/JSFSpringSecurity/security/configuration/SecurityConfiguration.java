@@ -24,9 +24,10 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
         http.authorizeRequests()
                 .antMatchers("/", "/index").permitAll()
                 .antMatchers("/admin/**").access("hasRole('ADMIN')")
-                .and().formLogin().loginPage("/login").failureUrl("/loginfailed").usernameParameter("username")
+                .and().formLogin().loginPage("/login").failureUrl("/pages/loginfailed.xhtml").usernameParameter("username")
                 .passwordParameter("password")
-                .and().logout().logoutSuccessUrl("/index");
+                .and().logout().logoutSuccessUrl("/index")
+                .and().csrf().disable();
     }
 
 }

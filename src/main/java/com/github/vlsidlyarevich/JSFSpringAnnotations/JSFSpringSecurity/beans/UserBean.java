@@ -2,6 +2,7 @@ package com.github.vlsidlyarevich.JSFSpringAnnotations.JSFSpringSecurity.beans;
 
 
 import com.github.vlsidlyarevich.JSFSpringAnnotations.JSFSpringSecurity.spring.UserMessage;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import javax.faces.bean.ManagedBean;
@@ -12,6 +13,7 @@ import javax.faces.bean.SessionScoped;
 @SessionScoped
 public class UserBean {
 
+    @Autowired
     private UserMessage message;
 
     public String printMessage(){

@@ -14,7 +14,7 @@
 <h:body>
     <form action="/login" method="post">
         <h:panelGroup layout="block">
-            <h:outputText value="#{userBean.printMessage}"/>
+            <h:outputText value="#{userBean.printMessage()}"/>
             <h:panelGrid columns="1" style="text-align: center">
                 <h:inputText a:placeholder="Username" id="username" required="true"/>
                 <h:inputSecret a:placeholder="Password" id="password" required="true"/>
