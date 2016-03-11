@@ -1,0 +1,7 @@
+package com.github.vlsidlyarevich.JSFSpringAnnotations.JSFSpringSecurity.security.configuration;
+
+
+import org.springframework.security.web.context.AbstractSecurityWebApplicationInitializer;
+
+public class ApplicationSecurityInitializer extends AbstractSecurityWebApplicationInitializer {
+}
