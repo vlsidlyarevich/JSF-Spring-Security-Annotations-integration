@@ -4,19 +4,25 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:a="http://xmlns.jcp.org/jsf/passthrough"
       xmlns:f="http://xmlns.jcp.org/jsf/core">
 
 <h:head>
-    <title>Authentification</title>
+    <title>Login page</title>
 </h:head>
 
 <h:body>
-    <h:form>
+    <form action="/j_spring_security_check" method="post">
         <h:panelGroup layout="block">
-                <h3>Spring Security Annotations example"</h3>
-                <h:outputText value="#{userBean.pringMessage()}"/>
-        </h:panelGroup>
-    </h:form>
-</h:body>
+            <h:outputText value="#{userBean.pringMessage}"/>
+            <h:panelGrid columns="1" style="text-align: center">
+                <h:inputText a:placeholder="Username" id="j_username" required="true"/>
+                <h:inputSecret a:placeholder="Password" id="j_password" required="true"/>
+            </h:panelGrid>
+                <input type="submit" value="Login"/>
 
+        </h:panelGroup>
+
+    </form>
+</h:body>
 </html>
