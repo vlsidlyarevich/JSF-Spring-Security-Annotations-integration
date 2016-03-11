@@ -3,10 +3,10 @@ package com.github.vlsidlyarevich.JSFSpringAnnotations.JSFSpringSecurity.securit
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.faces.mvc.JsfView;
 import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.view.UrlBasedViewResolver;
-import org.springframework.faces.webflow.JsfView;
 
 @Configuration
 @EnableWebMvc

@@ -14,7 +14,7 @@ public class UserBean {
 
     private UserMessage message;
 
-    public String pringMessage(){
+    public String printMessage(){
         return  message.getMessage();
     }
 
